@@ -1,0 +1,157 @@
+body {
+    background-color: #fafafd;
+    margin: 0;
+}
+/* homepage */
+.main-content-home{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    color: #211f43;;
+}
+
+
+.promo-section-home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.promo-image-home img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-products-home {
+    margin-bottom: 40px;
+    margin: 0 0 0 30px;
+
+}
+.image-product {
+    margin: 0;
+    background: black;
+}
+
+.featured-products-home h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.product-grid-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 0 10rem;
+}
+
+.product-box-home {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: #211f43;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #00000054;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.product-box-home h3 {
+    font-size: 16px;
+    margin-top: 0;
+    flex-grow: 1;
+}
+
+
+.product-box-home:hover img {
+    transform: scale(1.04);
+}
+
+.product-box-home img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-box-home h3{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.price-normal-home {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.price-discounted-home {
+    color: #2b8603;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.price-discounted-home span {
+    font-size: 14px;
+    color: #555;
+}
+
+.add-to-cart-home {
+    background-color: #211f43c0;
+    color: white;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+    margin: auto;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.add-to-cart-home:hover {
+    background-color: #211f43;
+}
+
+.banner-section-home {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.banner-section-home img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .product-grid-home {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-products-home {
+        margin: 0 0 20px 0;
+    }
+
+    .product-box-home {
+        padding: 10px;
+    }
+
+    .add-to-cart-home {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+
+/* fin homepage */
