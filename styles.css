@@ -4,10 +4,11 @@ body{
 .grid-container-plp{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25px 30px 2fr;
+    grid-template-rows: 40px 30px 2fr;
 }
 ul.breadcrumb-plp{
     margin: 0%;
+    padding: 10px 10px 10px 10px;
     list-style: none;
     display: inline;
     content: "/\00a0";
@@ -32,16 +33,57 @@ ul.breadcrumb-plp li a:hover {
     text-decoration: underline;
 }
 aside.aside-plp{
+    display: inline-block;
     margin: 0%;
-    padding: 15px ;
+    padding: 0px 15px 15px 15px;
     background-color: #f7f2f5;
     grid-column: 1;
     grid-row: 2/4;
-
+    border-radius: 8px;
+    height: max-content;
 }
 aside.aside-plp h3{
     margin:0%;
     padding-bottom: 15px;
+}
+input[type="checkbox"] {
+    cursor: pointer; 
+}
+.category1-plp{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    
+}
+.category2-plp{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+}
+.category3-plp{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+}
+.category4-plp{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+}
+.category5-plp{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+}
+button[type="submit"]{
+    margin-top: 10px;
+    border:black;
+    background-color: gray;
+    padding: 10px 20px;
+    text-align: center; 
+    display: inline-block; 
+    cursor: pointer; 
+    border-radius: 5px; 
 }
 section.oby-plp{
     grid-column: 2/span 4;
@@ -53,8 +95,14 @@ section.oby-plp{
     align-items: center;
 }
 section.products-plp{
+    display: flex;
     padding: 15px 15px 15px 15px;
     background-color: white;
     grid-column: 2/span 4;
     grid-row: 3;
+}
+.banner-plp{
+    background-color: rgb(131, 139, 255);
+    grid-column: 1/6;
+    grid-row: 4;
 }
