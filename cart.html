@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+
+    <!----------------- STYLES ----------------->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+    <!----------------- HEADER ----------------->
+    <header></header>
+
+    <!------------------ MAIN ------------------>
+    <main class="cart-main">
+
+        <!------------------ BREADCRUMB ------------------>
+        <section aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shopping cart</li>
+            </ul>
+        </section>
+
+
+        <!------------------ LIST OF PRODUCTS ------------------>
+        <section class="cart-products">
+
+            <!------------------ PRODUCT N°1 ------------------>
+            <article class="cart-product-item">
+                <img src="./img/cart-images/Freidora de Aire Digital.avif" alt="Freidora de Aire Digital 4 Lts Diamond Force">
+                <form class="cart-product-details">
+                    <h2>Freidora de Aire Digital 4 Lts Diamond Force</h2>
+                    <p>$370.000 UND</p>
+                    
+                    <div class="cart-values">
+                        <!------------------ RADIO BUTTONS ------------------>
+                        <div class="cart-shipping-method">
+                            <label><b>Shipping method:</b></label>
+                            <fieldset class="cart-radio-buttons">
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="standard"> Standard
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="express"> Express
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="overnight"> Overnight
+                            </fieldset>
+                        </div>
+                        
+                        <!------------------ QUANTITY ------------------>
+                        <fieldset class="cart-quantity-fs">
+                            <label for="cart-quantity"><b>Quantity:</b></label>
+                            <select id="cart-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </form>
+            </article>
+
+            <!------------------ PRODUCT N°2 ------------------>
+            <article class="cart-product-item">
+                <img src="./img/cart-images/Aire Acondicionado Minisplit.avif" alt="Aire Acondicionado Minisplit Msi-12 12.000btu/Hr(1/220v) On/off Seer19">
+                <form class="cart-product-details">
+                    <h2>Aire Acondicionado Minisplit Msi-12 12.000btu/Hr(1/220v) On/off Seer19</h2>
+                    <p>$2.100.000 UND</p>
+                    
+                    <div class="cart-values">
+                        <!------------------ RADIO BUTTONS ------------------>
+                        <div class="cart-shipping-method">
+                            <label><b>Shipping method:</b></label>
+                            <fieldset class="cart-radio-buttons">
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="standard"> Standard
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="express"> Express
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="overnight"> Overnight
+                            </fieldset>
+                        </div>
+                        
+                        <!------------------ QUANTITY ------------------>
+                        <fieldset class="cart-quantity-fs">
+                            <label for="cart-quantity"><b>Quantity:</b></label>
+                            <select id="cart-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </form>
+            </article>
+
+            <!------------------ PRODUCT N°3 ------------------>
+            <article class="cart-product-item">
+                <img src="./img/cart-images/Lavadora.avif" alt="Lavadora Carga Superior 18 Kg Digital Gris LA 18EVI16B-CC1HW">
+                <form class="cart-product-details">
+                    <h2>Lavadora Carga Superior 18 Kg Digital Gris LA 18EVI16B-CC1HW</h2>
+                    <p>$1.700.000 UND</p>
+                    
+                    <div class="cart-values">
+                        <!------------------ RADIO BUTTONS ------------------>
+                        <div class="cart-shipping-method">
+                            <label><b>Shipping method:</b></label>
+                            <fieldset class="cart-radio-buttons">
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="standard"> Standard
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="express"> Express
+                                <input class="cart-radio-item" type="radio" name="shipping-method" value="overnight"> Overnight
+                            </fieldset>
+                        </div>
+                        
+                        <!------------------ QUANTITY ------------------>
+                        <fieldset class="cart-quantity-fs">
+                            <label for="cart-quantity"><b>Quantity:</b></label>
+                            <select id="cart-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </form>
+            </article>
+
+        </section>
+
+        <!------------------ PURCHASE SUMMARY ------------------>
+        <aside class="cart-order-summary">
+            <h2>Purchase Summary</h2>
+        
+            <!------------------ SUMMARY ------------------>
+            <table class="cart-summary">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$4.170.000</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$100.000</td>
+                </tr>
+                <tr>
+                    <td>Discounts</td>
+                    <td>$135.000</td>
+                </tr>
+                <tr>
+                    <td>Total discounts</td>
+                    <td>$4.135.000</td>
+                </tr>
+                <tr>
+                    <td>IVA</td>
+                    <td>$792.300</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3">
+                        <hr style="margin: 5px 0;">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><b>Total</b></td>
+                    <td><b>$4.927.300</b></td>
+                </tr>
+            </table>
+            
+            <!------------------ Button ------------------>
+            <button id="cart-checkoutButton">Start Payment</button>
+        </aside>
+
+    </main>
+
+    <!----------------- FOOTER ----------------->
+    <footer></footer>
+
+</body>
+</html>
