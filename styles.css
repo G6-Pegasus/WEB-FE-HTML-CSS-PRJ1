@@ -139,11 +139,13 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 1vw;
+    height: 100px;
     padding: 10px;
 }
 
 .header-sub_header {
     background-color: beige;
+    padding: 10px;
 }
 
 .header-sub_header-navigational-item {
@@ -204,6 +206,7 @@ footer {
     padding: 20px;
     border-top: 1px solid #F5F5F5;
     font-family: 'roboto', sans-serif;
+    height: 150px;
 }
 
 .footer-top_section {
