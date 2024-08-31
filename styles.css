@@ -3,13 +3,6 @@
     padding: 0;
 }
 
-:root {
-    --base-color-1: #211f43;
-    --base-color-2: white;
-    --base-color-3: #413543;
-    --base-color-4: #fafafd;
-}
-
 /* Breadcrumb */
 .breadcrumb {
     grid-row: 1/2;
@@ -22,7 +15,7 @@
     .breadcrumb-item {
         a {
             text-decoration: none;
-            color: var(--base-color-1);
+            color: #211f43;
         }
 
         &::after {
@@ -36,7 +29,6 @@
     }
 }
 
-
 /* ------------------------ CART STYLES ------------------------------- */
 /* Main Layout */
 .cart-main {
@@ -45,7 +37,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     gap: 20px;
-    background-color: var(--base-color-4);
+    background-color: #fafafd;
 
     
     /* List of products */
@@ -63,7 +55,7 @@
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 5px;
-            background-color: var(--base-color-2);
+            background-color: white;
             gap: 20px;
 
             
@@ -87,7 +79,7 @@
                 }
 
                 h2 {
-                    color: var(--base-color-3);
+                    color: #413543;
                 }
 
                 .cart-values {
@@ -138,7 +130,7 @@
         border: 1px solid #ccc;
         padding: 20px;
         border-radius: 5px;
-        background-color: var(--base-color-2);
+        background-color: white;
         height: fit-content;
         gap: 10px;
 
@@ -163,7 +155,7 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: var(--base-color-1);
+            background-color: #7c7596;
             color: white;
             border: none;
             border-radius: 5px;
@@ -177,7 +169,7 @@
     }
 }
 
-/* --------------- RESPONSIVE DESIGN --------------- */
+/* ------------------------ CART RESPONSIVE STYLES ------------------------------- */
 @media (max-width: 1040px) {
     .cart-main {
         display: flex;
