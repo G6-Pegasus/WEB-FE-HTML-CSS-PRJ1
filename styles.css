@@ -1,13 +1,19 @@
 body{
     margin: 0%;
 }
+.main-plp{
+    margin: 0%;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    color: #211f43;
+}
 .grid-container-plp{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40px 30px 2fr;
 }
 ul.breadcrumb-plp{
-    margin: 0%;
+    margin: 0px 0px 0px 5px;
     padding: 10px 10px 10px 10px;
     list-style: none;
     display: inline;
@@ -34,9 +40,9 @@ ul.breadcrumb-plp li a:hover {
 }
 aside.aside-plp{
     display: inline-block;
-    margin: 0%;
-    padding: 0px 15px 15px 15px;
-    background-color: #f7f2f5;
+    margin-left:10px;
+    padding: 15px 15px 15px 15px;
+    background-color: #7c7596;
     grid-column: 1;
     grid-row: 2/4;
     border-radius: 8px;
@@ -48,6 +54,16 @@ aside.aside-plp h3{
 }
 input[type="checkbox"] {
     cursor: pointer; 
+}
+input[type=text], select {
+    font-family: "Montserrat", sans-serif;
+    width: 20%;
+    padding: 5px 5px;
+    margin: 0%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 .category1-plp{
     display:flex;
@@ -86,23 +102,65 @@ button[type="submit"]{
     border-radius: 5px; 
 }
 section.oby-plp{
+    margin-right: 20px;
     grid-column: 2/span 4;
     grid-row: 2;
     display: flex;
     flex-direction: row;
     justify-content:right;
-    background-color: #56636e;
+    background-color:white;
     align-items: center;
+    border-radius: 8px;
 }
-section.products-plp{
+section.listproducts-plp {
     display: flex;
-    padding: 15px 15px 15px 15px;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
     background-color: white;
-    grid-column: 2/span 4;
+    grid-column: 2 / span 4;
     grid-row: 3;
 }
+
+.product-plp {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #00000054;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.product-plp img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-plp h3, 
+.product-plp p, 
+.product-plp button {
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
 .banner-plp{
     background-color: rgb(131, 139, 255);
     grid-column: 1/6;
     grid-row: 4;
+}
+@media (max-width: 768px) {
+    .product-plp {
+        width: 100%;  
+    }
 }
