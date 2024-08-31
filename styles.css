@@ -10,11 +10,33 @@
         list-style-type: none;
         padding: 0%;
     }
+
+    .footer-top_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: 'roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        gap: 10px;
+    }
+
+    .footer-bottom_section-sitemap{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+        font-weight: 300;
+        list-style: none;
+    }
 }
 
 header {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #003366;
+    color: #ffffff;
 }
 
 .header-logo-and-company_name {
@@ -43,7 +65,7 @@ header {
 
 .header-logo-and-company_name a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     height: auto;
 }
 
@@ -109,6 +131,7 @@ header {
     font-weight: 500;
     height: auto;
     width: 70px;
+    color: #ffffff;
 }
 
 .header-main {
@@ -116,10 +139,11 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 1vw;
+    padding: 10px;
 }
 
 .header-sub_header {
-    background-color: #eeeeee;
+    background-color: beige;
 }
 
 .header-sub_header-navigational-item {
@@ -175,10 +199,55 @@ header {
 }
 
 footer {
-    background-color: #FFFFFF;
-    color: #333333;
+    background-color: #202020;
+    color: #ffffff;
     padding: 20px;
     border-top: 1px solid #F5F5F5;
+    font-family: 'roboto', sans-serif;
 }
+
+.footer-top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer-top_section-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-bottom_section-sitemap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.footer-bottom_section-sitemap-sub_list{
+    font-size: 12px;
+    font-weight: 300;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.footer-bottom_section-sitemap-sub_list a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
