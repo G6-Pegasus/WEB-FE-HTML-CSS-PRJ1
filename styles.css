@@ -1,8 +1,5 @@
-body {
-    background-color: #fafafd;
-    margin: 0;
-}
-/* homepage */
+
+/* ------------------------------------------ homepage -------------------------------------------- */
 .main-content-home{
     font-family: "Montserrat", sans-serif;
     padding: 0;
@@ -28,7 +25,7 @@ body {
 
 }
 .image-product {
-    margin: 0;
+    margin-bottom: 3px;
     background: black;
 }
 
@@ -83,6 +80,7 @@ body {
 .product-box-home h3{
     font-size: 16px;
     margin-top: 0;
+    text-align: start;
 }
 
 .price-normal-home {
@@ -154,4 +152,4 @@ body {
     }
 }
 
-/* fin homepage */
+/* ------------------------------------------ fin homepage ------------------------------------------ */
