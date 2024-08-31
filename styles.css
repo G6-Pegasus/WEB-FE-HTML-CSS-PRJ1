@@ -6,20 +6,20 @@ body {
 .main-content-home{
     font-family: "Montserrat", sans-serif;
     padding: 0;
-    color: #211f43;;
+    color: #211f43;
 }
-
 
 .promo-section-home {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .promo-image-home img {
     width: 100%;
     height: auto;
+    margin-bottom: 0px;
 }
 
 .featured-products-home {
@@ -146,12 +146,12 @@ body {
 
     .product-box-home {
         padding: 10px;
+        margin: 0 1.6rem 0 1.6rem;
     }
 
     .add-to-cart-home {
         padding: 0.8rem 1.5rem;
     }
 }
-
 
 /* fin homepage */
