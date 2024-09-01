@@ -617,7 +617,36 @@ ul.breadcrumb-pdp li a:hover {
     line-height: 150%;
     letter-spacing: 1px;
   }
+  @media (max-width: 1040px) {
+    .img-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 710px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-container img  .small-Card{
+        /*width: 200px !important;
+        height: 200px !important;*/
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-info .technical {
+        text-align: center;
+    }
+}
+
+@media (max-width: 490px) {
+    /*.small-Card {
+        flex-direction: column;
+
+    }*/
+}
 /* ------------------ Termina PDP ----------------  */
 
 /* ------------------------ CART STYLES ------------------------------- */
