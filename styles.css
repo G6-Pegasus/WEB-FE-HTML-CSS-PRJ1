@@ -621,6 +621,16 @@ ul.breadcrumb-pdp li a:hover {
     .img-card {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .small-Card img{
+        /*width: 200px !important;
+        height: 200px !important;*/
+        width: 15vw; /* Adjust percentage as needed */
+
+
+
     }
 }
 
@@ -629,11 +639,13 @@ ul.breadcrumb-pdp li a:hover {
         flex-direction: column;
     }
 
-    .product-container img  .small-Card{
+    .product-container img  .small-Card img{
         /*width: 200px !important;
         height: 200px !important;*/
-        max-width: 100%;
-        height: auto;
+        width: 50vw; /* Adjust percentage as needed */
+        height: auto; /* Maintain aspect ratio */
+        display: flex;
+
     }
 
     .product-info .technical {
@@ -641,11 +653,17 @@ ul.breadcrumb-pdp li a:hover {
     }
 }
 
-@media (max-width: 490px) {
-    /*.small-Card {
-        flex-direction: column;
 
-    }*/
+@media (max-width: 490px) {
+    .small-Card {
+        flex-direction: column;
+        display: block; /* Ensure the small-Card is displayed */
+    }
+
+    .small-Card img {
+        width: 100%; /* Make the image take up the full width of the container */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 /* ------------------ Termina PDP ----------------  */
 
