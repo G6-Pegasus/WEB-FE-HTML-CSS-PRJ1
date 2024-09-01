@@ -447,3 +447,14 @@ ul.breadcrumb-pdp li a:hover {
     padding-left: 0px;
   }
   
+  .technical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    color: #787a80;
+    font-size: 12px;
+    font-family: Lato;
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
