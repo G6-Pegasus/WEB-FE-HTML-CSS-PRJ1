@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/* ------------------------ CART STYLES ------------------------------- */
 /* Breadcrumb */
 .breadcrumb {
     grid-row: 1/2;
@@ -29,7 +25,6 @@
     }
 }
 
-/* ------------------------ CART STYLES ------------------------------- */
 /* Main Layout */
 .cart-main {
     display: grid;
@@ -155,7 +150,7 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: #7c7596;
+            background-color: #211f43;
             color: white;
             border: none;
             border-radius: 5px;
