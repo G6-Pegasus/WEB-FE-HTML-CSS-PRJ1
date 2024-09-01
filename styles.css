@@ -660,10 +660,9 @@ ul.breadcrumb-pdp li a:hover {
         display: block; /* Ensure the small-Card is displayed */
     }
 
-    .small-Card img {
-        width: 100%; /* Make the image take up the full width of the container */
-        height: auto; /* Maintain aspect ratio */
-    }
+    /*.small-Card img {
+        width: 100%; /* Make the image take up the full width of the container 
+    }*/
 }
 /* ------------------ Termina PDP ----------------  */
 
