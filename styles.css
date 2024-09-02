@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* --------------------------------header y footer -------------------------------- */
@@ -23,7 +24,6 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        font-family: 'roboto', sans-serif;
         font-size: 12px;
         font-weight: 300;
         gap: 10px;
@@ -38,6 +38,9 @@
         font-size: 12px;
         font-weight: 300;
         list-style: none;
+    }
+    footer {
+        min-height: 25rem;
     }
 }
 
@@ -104,6 +107,7 @@ header {
     align-items: center;
     flex-direction: column;
 }
+
 
 .header-search_form {
     display: flex;
@@ -199,7 +203,6 @@ header {
 
 /* Estilos de los elementos del sub-menú de navegación desplegable del sub-header */
 .header-sub_header-navigational_sub_menu-elements {
-    font-family: 'roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     text-align: center;
@@ -212,15 +215,16 @@ footer {
     color: #ffffff;
     padding: 20px;
     border-top: 1px solid #F5F5F5;
-    font-family: 'roboto', sans-serif;
-    height: 150px;
+    height: 10rem;
+    position: relative;
+    bottom: 0;
+
 }
 
 .footer-top_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
 }
@@ -319,8 +323,8 @@ footer {
 
 .product-box-home h3 {
     font-size: 16px;
-    margin-top: 0;
     flex-grow: 1;
+    padding-bottom: 16px;
 }
 
 
@@ -384,7 +388,7 @@ footer {
 
 .banner-section-home {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .banner-section-home img {
@@ -498,7 +502,7 @@ input[type=text], select {
 button[type="submit"]{
     margin-top: 10px;
     border:black;
-    background-color: white;
+    background-color: transparent;
     padding: 10px 20px;
     text-align: center; 
     display: inline-block; 
@@ -622,7 +626,7 @@ button[type="add-to-car-plp"]:hover{
 .banner-plp{
     grid-column: 1/6;
     grid-row: 4;
-    padding: 15px;
+    padding: 40px 0;
 }
 .responsive {
     width: 100%;
@@ -641,6 +645,32 @@ button[type="add-to-car-plp"]:hover{
         grid-column: 1; 
         grid-row: 2;
     }
+    .grid-container-plp {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto !important;
+    }
+    .aside-plp {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .title-list-products-plp {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        padding: 10px;
+        display: flex;
+        flex-direction: column !important;
+    }
+    .listproducts-plp {
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+    }
+    .selector-plp {
+        justify-content: start !important;
+        margin-top: 4px;
+    }
 }
 
 /* -------------------- TERMINA PLP ---------------- */
@@ -658,65 +688,26 @@ Aqui comienza PDP
 Aqui comienza PDP
 Aqui comienza PDP
 
-*/
-ul.breadcrumb-pdp{
-    margin: 0%;
-    padding: 10px 10px 10px 10px;
-    list-style: none;
-    display: felx;
-    content: "/\00a0";
-    /*grid-column: 1/6;
-    grid-row: 1;*/
-    align-items: center;
-    /* color: #F9DBBA;*/
-    background-color:#ffffff ;
-}
-ul.breadcrumb-pdp li {
-    display: inline;
-    color: #000000;
-}
-ul.breadcrumb-pdp li+li :before{
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-}
-ul.breadcrumb-pdp li a{
-    color: #0275d8;
-    text-decoration: none;
-}
-ul.breadcrumb-pdp li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-}
 
 /*main page test*/
-* {
-    box-sizing: border-box;
-    margin: 0;
+
+.pdp-main{
+    padding: 10px !important;
+    font-family: "Montserrat", sans-serif;
     padding: 0;
+    color: #211f43;
+    min-height: 100vh;
   }
-  /*body {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;
-  }*/
   
-  header {
-    margin-bottom: 20px;
-  }
   
   .product-container {
     display: flex;
     justify-content: start;
     align-items: start;
     gap: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding:25px;
   }
   
-  /* .img-card{
-      width: 40%;
-  } */
   
   .img-card img {
     width: 100%;
@@ -742,7 +733,7 @@ ul.breadcrumb-pdp li a:hover {
     border-radius: 4px;
     cursor: pointer;
   }
-  /*#17696a;*/
+
   .small-Card img:active {
     border: 1px solid #1F316F;
   }
@@ -753,22 +744,18 @@ ul.breadcrumb-pdp li a:hover {
   
   .product-info{
     width: 60%;
-    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding:2px;*/
   }
   .product-info h3 {
     font-size: 32px;
-    font-family: Lato;
     font-weight: 600;
     line-height: 130%;
   }
   
   .product-info h5 {
     font-size: 24px;
-    font-family: Lato;
     font-weight: 500;
     line-height: 130%;
-    color: #ff4242;
+    color: #2b8603;
     margin: 6px 0;
   }
   
@@ -779,20 +766,26 @@ ul.breadcrumb-pdp li a:hover {
   .product-info p {
     color: #424551;
     margin: 15px 0;
-    width: 70%;
+    /* width: 70%; */
   }
   
 
-  
+  .table-info{
+    width: 70%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
   .quantity input {
-    width: 51px;
-    height: 33px;
+    width: 35px;
+    height: auto;
     margin-bottom: 15px;
     padding: 6px;
+    margin-right: 10px;
   }
   
   button {
-    background: #5B99C2;
+    background: #211f43c0;
     border-radius: 4px;
     padding: 10px 37px;
     border: none;
@@ -801,7 +794,7 @@ ul.breadcrumb-pdp li a:hover {
   }
   
   button:hover {
-    background: #1F316F;
+    background: #211f43;
     transition: ease-in 0.4s;
   }
   
@@ -809,10 +802,9 @@ ul.breadcrumb-pdp li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    /* width: 40%; */
     color: #787a80;
     font-size: 12px;
-    font-family: Lato;
     line-height: 150%;
     letter-spacing: 1px;
     
@@ -820,7 +812,7 @@ ul.breadcrumb-pdp li a:hover {
   
   hr {
     color: #787a80;
-    width: 58%;
+    /* width: 58%; */
     opacity: 0.67;
   }
   
@@ -840,32 +832,68 @@ ul.breadcrumb-pdp li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    /* width: 70%; */
     color: #787a80;
     font-size: 12px;
-    font-family: Lato;
     line-height: 150%;
     letter-spacing: 1px;
   }
 
+  .technical td:first-child {
+    font-weight: bold;
+  }
+
+  .pdp-products2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .pdp-products2 .product-box-home{
+    width: 200px;
+    height: auto;
+  }
+
+  .pdp-products2 .product-box-home h3 {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: start;
+  }
+
+  .pdp-products2 .product-box-home p {
+    margin-top: 3px;
+  }
+
+  .pdp-products2 .product-box-home .price-discounted-home{
+    color: #2b8603;
+  }
 @media (max-width: 710px) {
     .product-container {
         flex-direction: column;
     }
 
-    .product-container img  .small-Card img{
+    .product-container img {
         /*width: 200px !important;
         height: 200px !important;*/
-        width: 50vw; /* Adjust percentage as needed */
+        width: 100%; /* Adjust percentage as needed */
         height: auto; /* Maintain aspect ratio */
-        display: flex;
 
+    }
+    .pdp-products2 {
+        flex-direction: column;
+    }
+    .small-Card img {
+        width: 48%; /* Make the image take up the full width of the container */
     }
 
     .product-info .technical {
         text-align: center;
     }
+    .product-info, .table-info {
+        width: 100%;
+    }
 }
+
 
 
 @media (max-width: 490px) {
@@ -895,11 +923,16 @@ ul.breadcrumb-pdp li a:hover {
         a {
             text-decoration: none;
             color: #211f43;
+            font-weight: normal;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         &::after {
-            content: "/";
-            margin-left: 5px;
+            content: " /";
+            margin: 0 5px;
         }
     
         &:last-child::after {
@@ -916,6 +949,7 @@ ul.breadcrumb-pdp li a:hover {
     padding: 20px;
     gap: 20px;
     background-color: #fafafd;
+    min-height: 100vh;
 
     
     /* List of products */
