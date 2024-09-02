@@ -40,7 +40,7 @@
         list-style: none;
     }
     footer {
-        min-height: 25rem;
+        min-height: 441px;
     }
 }
 
@@ -215,7 +215,7 @@ footer {
     color: #ffffff;
     padding: 20px;
     border-top: 1px solid #F5F5F5;
-    height: 10rem;
+    height: 201px;
     position: relative;
     bottom: 0;
 
@@ -647,25 +647,34 @@ button[type="add-to-car-plp"]:hover{
     }
     .grid-container-plp {
         grid-template-columns: 1fr !important;
-        grid-template-rows: auto auto auto !important;
+        grid-template-rows: 50px auto auto auto auto !important;
+    }
+    .breadcrumb-plp {
+        align-self: center !important;
+        grid-column: 1 !important;
+        grid-row: 1 !important;
     }
     .aside-plp {
         grid-column: 1 !important;
-        grid-row: 1 !important;
+        grid-row: 2 !important;
         padding: 10px;
         margin-left: 0;
         margin-right: 20px;
     }
     .title-list-products-plp {
         grid-column: 1 !important;
-        grid-row: 2 !important;
+        grid-row: 3 !important;
         padding: 10px;
         display: flex;
         flex-direction: column !important;
     }
     .listproducts-plp {
         grid-column: 1 !important;
-        grid-row: 3 !important;
+        grid-row: 4 !important;
+    }
+    .banner-plp {
+        grid-column: 1 !important;
+        grid-row: 5 !important;
     }
     .selector-plp {
         justify-content: start !important;
@@ -796,6 +805,7 @@ Aqui comienza PDP
   button:hover {
     background: #211f43;
     transition: ease-in 0.4s;
+    cursor: pointer;
   }
   
   .info {
@@ -847,6 +857,7 @@ Aqui comienza PDP
     display: flex;
     gap: 15px;
     margin-top: 15px;
+    flex-wrap: wrap;
   }
 
   .pdp-products2 .product-box-home{
@@ -891,6 +902,10 @@ Aqui comienza PDP
     }
     .product-info, .table-info {
         width: 100%;
+    }
+
+    .pdp-products2 .product-box-home {
+        width: 80%;
     }
 }
 
