@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Product Description </title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png">
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/353d5571a6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
     <header>
         <div class="header-main">
             <div class="header-logo-and-company_name">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/logo.jpeg" alt="Logo">
                 </a>
-                <a href="#">
+                <a href="index.html">
                     <span class="header-company_name">
                         Pegasus Retail Store
                     </span>
                 </a>
             </div>
-            
+
             <div class="header-search-and-text_box">
                 <form class="header-search_form">
                     <input type="text" placeholder="Buscar..." class="search-input">
@@ -29,15 +37,15 @@
                         <img src="img/search.svg" alt="Buscar">
                     </button>
                 </form>
-    
+
             </div>
-    
+
             <div class="header-user_section-area">
                 <div class="header-shopping_cart-section">
-                    <a href="#">
+                    <a href="cart.html">
                         <img src="img/shopping-cart.svg" alt="Shopping Cart">
                     </a>
-                    <a href="#">
+                    <a href="cart.html">
                         <span class="header-user_section-area-text">
                             Carrito
                         </span>
@@ -51,7 +59,7 @@
                         <span class="header-user_section-area-text">
                             Tu Cuenta
                         </span>
-                    </a>  
+                    </a>
                 </div>
             </div>
         </div>
@@ -61,8 +69,10 @@
                     <li class="header-sub_header-navigational-item">
                         <a href="#" class="header-sub_header-navigational_menu-main-elements">Tecnología</a>
                         <ul class="header-sub_header-sub_menu">
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Computadores</a></li>
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Televisores</a></li>
+                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Computadores</a>
+                            </li>
+                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Televisores</a>
+                            </li>
                             <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Audio</a></li>
                             <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Vídeo</a></li>
                             <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Impresión</a></li>
@@ -72,9 +82,13 @@
                     <li class="header-sub_header-navigational-item">
                         <a href="#" class="header-sub_header-navigational_menu-main-elements">Electrodomésticos</a>
                         <ul class="header-sub_header-sub_menu">
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Climatización</a></li>
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Refrigeración</a></li>
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Lavadoras/Secadoras</a></li>
+                            <li><a href="plp.html"
+                                    class="header-sub_header-navigational_sub_menu-elements">Climatización</a></li>
+                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Refrigeración</a>
+                            </li>
+                            <li><a href="#"
+                                    class="header-sub_header-navigational_sub_menu-elements">Lavadoras/Secadoras</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="header-sub_header-navigational-item">
@@ -82,7 +96,8 @@
                         <ul class="header-sub_header-sub_menu">
                             <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Celulares</a></li>
                             <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Tabletas</a></li>
-                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Smartwatchs</a></li>
+                            <li><a href="#" class="header-sub_header-navigational_sub_menu-elements">Smartwatchs</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="header-sub_header-navigational-item">
@@ -98,67 +113,109 @@
             </nav>
         </div>
     </header>
-    <div>
-        <ul class="breadcrumb-pdp">
-            <li> <a href="index.html">Hogar</a> </li>
-            <li> <a href="plp.html">Lista de productos</a> </li>
-            <li>  <a style="color:#000000">Producto actual </a>                                 </li>
-          </ul>
-    </div>
+    <main class="pdp-main">
+        <div>
+            <ul class="breadcrumb-plp">
+                <li> <a href="index.html">Inicio</a> </li>
+                <li> <a href="plp.html">Lista de productos</a> </li>
+                <li> <a style="color:#000000">Producto actual </a> </li>
+            </ul>
+        </div>
+        <section class="product-container">
 
+            <div class="img-card">
+                <img src="img/pdp/aire.png" alt="" id="featured-image">
+            </div>
+
+            <div class="product-info">
+                <h3>Aire Acondicionado M/Split - Olimpo - Inverter 12000 BTU 110V Clase D.</h3>
+                <del>$ 2.499.000</del>
+                <h5> $ 1.249.500</h5>
+                <p>El Inverter R32 Class D de Olimpo redefine el estándar de climatización con su rendimiento dinámico y
+                    avanzado. Diseñado para ofrecer un confort inigualable, este aire acondicionado combina eficiencia y
+                    potencia para transformar tu espacio en un oasis de frescura. Su tecnología Inverter R32 asegura una
+                    respuesta rápida y constante, adaptándose inteligentemente a tus necesidades de temperatura.</p>
+
+                <div class="quantity">
+                    <input type="number" value="1" min="1">
+                    <button>Añadir al carrito</button>
+                </div>
+
+                <table class="table-info">
+                    <tr class="technical" style="text-align:center">
+                        <td>Informacion de producto</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr style="margin: 5px 0;">
+                        </td>
+                    </tr>
+                    <tr class="technical">
+                        <td>Tipo de motor:</td>
+                        <td>Split</td>
+                    </tr>
+                    <tr class="technical">
+                        <td>Tipo de motor:</td>
+                        <td>Inverter</td>
+                    </tr>
+                    <tr class="technical">
+                        <td>Eficencia energetica:</td>
+                        <td>C</td>
+                    </tr>
+                    <tr class="technical">
+                        <td>Medidas Externas:</td>
+                        <td>88,9 x 29,9 x 21,5 cm </td>
+                    </tr>
+                    <tr class="technical">
+                        <td>Consumo Minimo:</td>
+                        <td>120.12 kWh/Mes </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr style="margin: 5px 0;">
+                        </td>
+                    </tr>
+                </table>
+                <article>
+                    <h2>Te podría interesar</h2>
+                    <div class="pdp-products2">
+                    <div class="product-box-home">
+                        <img src="img/imageshome/productoshome/NeveraHaceb271lt.png" alt="Producto 5">
+                        <h3>Nevera Haceb 271 Lt Brutos No Frost Se Mi Ni R2</h3>
+                        <p class="price-normal-home">$2.172.900</p>
+                        <p class="price-discounted-home">$1.521.030 <span>(-30%)</span></p>
+                        <button class="add-to-cart-home">Agregar al Carrito</button>
+                    </div>
     
-    <section class="product-container">
-        
-        <div class="img-card">
-            <img src="img/pdp/aire.png" alt="" id="featured-image">
-            
-            <div class="small-Card">
-                <img src="img/pdp/aire.png" alt="" class="small-Img">
-                <img src="img/pdp/aire.png" alt="" class="small-Img">
-                <img src="img/pdp/aire.png" alt="" class="small-Img">
-                <img src="img/pdp/aire.png" alt="" class="small-Img">
-            </div>
-        </div>
-        
-        <div class="product-info">
-            <h3>Aire Acondicionado M/Split - Olimpo - Inverter 12000 BTU 110V Clase D.</h3>
-            <h5>Precio: $ 1.249.500 <del>$ 2.499.000</del></h5>
-            <p>El aire acondicionado SAMSUNG AR12CVHZBWK/CB cuenta con tecnología Digital Inverter Boost que ahorra hasta un 73% de energía* y enfría hasta un 43% más rápido brindado mayor comodidad. Con el Filtro Antibacterial en cobre de fácil limpieza elimina el 99,9%* de bacterias presentes en el aire. Adicionalmente, con Triple Protector Plus protege el compresor y prevé daños por cambio de voltaje y corrosión. Adquiérelo Ya!!</p>
-            
+                    <div class="product-box-home">
+                        <img src="img/imageshome/productoshome/estufa.png" alt="Producto 6">
+                        <h3>Estufa de Piso Abba Gas Natural 4 Puestos Negro AT 101-5N N</h3>
+                        <p class="price-normal-home">$734.900</p>
+                        <p class="price-discounted-home">$624.665 <span>(-15%)</span></p>
+                        <button class="add-to-cart-home">Agregar al Carrito</button>
+                    </div>
+    
+                    <div class="product-box-home">
+                        <img src="img/imageshome/productoshome/LGTHINKQ.png" alt="Producto 7">
+                        <h3>Televisor LG 43 Pulgadas ThinkQ AI 43LM6370PDB</h3>
+                        <p class="price-normal-home">$2.399.000</p>
+                        <p class="price-discounted-home">$1.127.953 <span>(-53%)</span></p>
+                        <button class="add-to-cart-home">Agregar al Carrito</button>
+                    </div>
 
-
-            <div class="quantity">
-                <input type="number" value="1" min="1">
-                <button>Añadir al carrito</button>
+                    <div class="product-box-home">
+                        <img src="img/imageshome/productoshome/aire220v.png" alt="Producto 1">
+                        <h3>Aire Acondicionado Olimpo Mini Split ON/OFF 12000 BTU 220 Voltios OLACB12-220MIC</h3>
+                        <p class="price-normal-home">$1.799.000</p>
+                        <p class="price-discounted-home">$1.249.500 <span>(-20%)</span></p>
+                        <button class="add-to-cart-home">Agregar al Carrito</button>
+                    </div>
+    
+                </div>
+                </article>
             </div>
-
-            <div class="technical"style="text-align:center">
-                <p>Informacion de producto</p>
-            </div>
-            <hr>
-            <div class="technical">
-                <p>Tipo de motor</p> 
-                <p>Split</p> 
-            </div>
-            <div class="technical">
-                <p>Tipo de motor</p> 
-                <p>Inverter</p> 
-            </div>
-            <div class="technical">
-                <p>Eficencia energetica</p> 
-                <p>C</p> 
-            </div>
-            <div class="technical">
-                <p>Medidas Externas (Ancho x Alto x Fondo)</p> 
-                <p>88,9 x 29,9 x 21,5 Centímetros </p> 
-            </div>
-            <div class="technical">
-                <p>Consumo Minimo Energetico</p> 
-                <p>120.12  kWh/Mes </p> 
-            </div>
-            <hr>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <div class="footer-top_section">
             <div class="footer-top_section-column_1">
@@ -230,7 +287,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </detail>
+                        </detail>
                 </li>
                 <li>
                     <details>
@@ -241,7 +298,7 @@
                             <li>
                                 <a href="#">
                                     Política de Privacidad
-                                </a>  
+                                </a>
                             </li>
                             <li>
                                 <a href="#">
@@ -259,7 +316,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </detail>
+                        </detail>
                 </li>
                 <li>
                     <details>
@@ -270,42 +327,42 @@
                             <li>
                                 <a href="#">
                                     Envíos y Entregas
-                                </a>    
-                                <li>
-                                    <a href="#">
-                                        Devoluciones y Cambios
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Atención al Cliente
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Garantías
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Instalación y Montaje
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Asesoramiento Personalizado
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Suscripciones y Membresías
-                                    </a>
-                                </li>
+                                </a>
+                            <li>
+                                <a href="#">
+                                    Devoluciones y Cambios
+                                </a>
                             </li>
-                        </ul>
-                    </detail>
+                            <li>
+                                <a href="#">
+                                    Atención al Cliente
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Garantías
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Instalación y Montaje
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Asesoramiento Personalizado
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Suscripciones y Membresías
+                                </a>
+                            </li>
                 </li>
+            </ul>
+            </detail>
+            </li>
             </ul>
         </div>
     </footer>
-  </body>
+</body>
