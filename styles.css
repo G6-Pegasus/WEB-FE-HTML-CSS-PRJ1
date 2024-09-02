@@ -318,8 +318,8 @@ footer {
 
 .product-box-home h3 {
     font-size: 16px;
-    margin-top: 0;
     flex-grow: 1;
+    padding-bottom: 16px;
 }
 
 
@@ -383,7 +383,7 @@ footer {
 
 .banner-section-home {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .banner-section-home img {
