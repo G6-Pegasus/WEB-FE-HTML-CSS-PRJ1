@@ -848,6 +848,37 @@ ul.breadcrumb-pdp li a:hover {
     letter-spacing: 1px;
   }
 
+@media (max-width: 710px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-container img  .small-Card img{
+        /*width: 200px !important;
+        height: 200px !important;*/
+        width: 50vw; /* Adjust percentage as needed */
+        height: auto; /* Maintain aspect ratio */
+        display: flex;
+
+    }
+
+    .product-info .technical {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .small-Card {
+        flex-direction: column;
+        display: block; /* Ensure the small-Card is displayed */
+    }
+
+    /*.small-Card img {
+        width: 100%; /* Make the image take up the full width of the container 
+    }*/
+}
+
 /* ------------------ Termina PDP ----------------  */
 
 /* ------------------------ CART STYLES ------------------------------- */
